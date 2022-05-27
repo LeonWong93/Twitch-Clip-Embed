@@ -22,13 +22,10 @@
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const clip_id = urlParams.get("clipid");
-    const time_sec = url.get("t") || 0;
     console.log(url);
     document.getElementById("url").src =
       "https://clips.twitch.tv/embed?clip=" +
       clip_id +
-      "&time=" + 
-      time_sec + 
       "&parent=leonwong93.github.io&autoplay=true&controls=false";
   </script>
 </html>
