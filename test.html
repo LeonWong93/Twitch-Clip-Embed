@@ -4,16 +4,12 @@
     <meta charset="UTF-8" />
   </head>
   <body style="background-color: black">
-  <script>
-      let width = url.searchParams.get("w") || 534;
-      let height = url.searchParams.get("h") || 300;
-  </script>
     <div id="iframe">
       <iframe
         id="url"
         src="about:blank"
-        height=${height}
-        width=${width}
+        height=534
+        width=300
         frameborder="0"
         controls="false"
         scrolling="no"
@@ -27,9 +23,11 @@
     const urlParams = new URLSearchParams(queryString);
     const clip_id = urlParams.get("clipid");
     const time = urlParams.get("t") || 0;
+    const width = urlParams.get("w") || 534;
+    const height = urlParams.get("h") || 300;
     const controls = urlParams.get("controls") || false;
     console.log(url);
     document.getElementById("url").src =
-      "https://clips.twitch.tv/embed?clip=" + clip_id + "&time=" + time + "&parent=leonwong93.github.io&autoplay=true&controls=" + controls + "";
+      "https://clips.twitch.tv/embed?clip=" + clip_id + "&time=" + time + "&parent=leonwong93.github.io&autoplay=true&controls=" + controls + "&height=" + height + "&width=" + width + "";
   </script>
 </html>
