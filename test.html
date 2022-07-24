@@ -9,8 +9,8 @@
         id="url"
         src="about:blank"
         frameborder="0"
-        height=534
-        width=300
+        width=640
+        height=360
         controls="false"
         scrolling="no"
         allowfullscreen="true"
@@ -23,8 +23,8 @@
     const urlParams = new URLSearchParams(queryString);
     const clip_id = urlParams.get("clipid");
     const time = urlParams.get("t") || 0;
-    const width = urlParams.get("w") || 534;
-    const height = urlParams.get("h") || 300;
+    const width = urlParams.get("w") || 640;
+    const height = urlParams.get("h") || 360;
     const controls = urlParams.get("controls") || false;
     console.log(url);
     document.getElementById("url").src =
