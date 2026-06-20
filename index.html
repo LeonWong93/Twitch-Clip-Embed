@@ -24,8 +24,9 @@
     const clip_id = urlParams.get("clipid");
     const time = urlParams.get("t") || 0;
     const controls = urlParams.get("controls") || false;
+    const muted = urlParams.get("muted") || false;
     console.log(url);
     document.getElementById("url").src =
-      "https://clips.twitch.tv/embed?clip=" + clip_id + "&time=" + time + "&parent=leonwong93.github.io&autoplay=true&controls=" + controls + "";
+      "https://clips.twitch.tv/embed?clip=" + clip_id + "&time=" + time + "&parent=leonwong93.github.io&autoplay=true&muted=" + muted + "controls=" + controls + "";
   </script>
 </html>
